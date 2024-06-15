@@ -21,11 +21,13 @@ class CustomException(Exception):
         return self.error_message
 
 
-if __name__=='__main__':
 
-    try:
-        a = 1/0
-    except Exception as e:
-        logger.error("Divide by zero error")
-        raise CustomException(e, sys)
+# code to check the logger is working or not
+# if __name__=='__main__':
+
+#     try:
+#         a = 1/0
+#     except Exception as e:
+#         logger.error("Divide by zero error")
+#         raise CustomException(e, sys)
 
